@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Task = require('../models/database')
 
-router.get('/api/food',(req,res)=>{
+router.get('/api/lee',(req,res)=>{
     eval('var obj='+req.query.q);
     var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://localhost:27017/";
