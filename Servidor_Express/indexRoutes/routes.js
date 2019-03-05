@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const Task = require('../models/database')
 
 router.get('/api/lee',(req,res)=>{
     eval('var obj='+req.query.q);
@@ -18,7 +17,7 @@ router.get('/api/lee',(req,res)=>{
      });
 })
 
-router.get('/api/borra',(req,res)=>{
+router.delete('/api/borra',(req,res)=>{
     var mongodb   = require('mongodb');
     var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://localhost:27017/";
@@ -34,7 +33,7 @@ router.get('/api/borra',(req,res)=>{
      });
 })
 
-router.get('/api/modifica',(req,res)=>{
+router.put('/api/modifica',(req,res)=>{
     eval('var obj='+req.query.q);
     var mongodb   = require('mongodb');
     var MongoClient = require('mongodb').MongoClient;
@@ -52,7 +51,7 @@ router.get('/api/modifica',(req,res)=>{
         });
      });
 })
-router.get('/api/inserta',(req,res)=>{
+router.post('/api/inserta',(req,res)=>{
     eval('var obj='+req.query.q);
     var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://localhost:27017/";
