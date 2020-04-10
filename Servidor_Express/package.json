@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongodb": "^2.2.33",
-    "mongoose": "^5.4.16",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0"
   }
 }

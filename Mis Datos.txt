@@ -1,9 +1,0 @@
-Marco Muñoz Ovalle 2019
-Se tata de un API rest con tecnologias NodeJS,
-FrameWork Express para el servidor(BackEnd), y cliente hecho con React(FrontEnd) conecion con proxy Fetch
-Base datos MongoDB  mongoose).
-tambien consume una API de google para videos.
-
-Chileno; santiago las condes.
-Celular: 9 77618046. Marzo 5 2019
-correo marco.munoz.ovalle2010@gmail.com
